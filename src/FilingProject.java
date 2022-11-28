@@ -90,14 +90,7 @@ public class FilingProject {
 								System.out.println("the word is " + userinput + "file name" + y);
 								count++;
 
-								try {
-									File sourcefile = new File(y.getPath());
-									File targetfile = new File("C:\\Users\\user015\\eclipse-workspace\\FilesProject\\NewDirectory"+ y.getName());
-									Files.copy(sourcefile.toPath(), targetfile.toPath(),
-											StandardCopyOption.REPLACE_EXISTING);
-								} catch (Exception e) {
-									System.out.println(e);
-								}
+						
 							}
 						}
 					}
